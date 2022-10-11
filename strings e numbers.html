@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prática</title>
+  </head>
+  <body>
+    <script>
+      const nome = prompt("Digite o seu nome completo:");
+      const nota1 = prompt("Digite a sua nota do primeiro bimestre:");
+      const nota2 = prompt("Digite a sua nota do segundo bimestre:");
+      const nota3 = prompt("Digite a sua nota do terceiro bimestre:");
+      const nota4 = prompt("Digite a sua nota do quarto bimestre:");
+      let media = (nota1 + nota2 + nota3 + nota4) / 4;
+      num1 = Number(num1.toFixed(2));
+
+      window.document.body.innerHTML += `o seu nome completo é: ${nome} <br />`;
+      window.document.body.innerHTML += `o seu nome tem ${nome.length} letras <br />`;
+      window.document.body.innerHTML += `a primeira letra do seu nome é : ${nome[0]} <br />`;
+      window.document.body.innerHTML += `a ultima letra do seu nome é :
+      ${nome.slice(-1)} <br />`;
+      window.document.body.innerHTML += `o seu primeiro nome é : ${nome.split(
+        " ",
+        1
+      )} <br />`;
+      window.document.body.innerHTML += `o seu nome sem as letras maiusculas é: ${nome.match(
+        /[a-z]/g
+      )} <br /> `;
+      window.document.body.innerHTML += `o indice da primeira letra a no seu nome é: ${nome.search(
+        /a/
+      )} <br />`;
+      window.document.body.innerHTML += `o seu nome substituindo as letras A por R fica :${nome.replace(
+        /a/g,
+        "r"
+      )} <br />`;
+      window.document.body.innerHTML += `o seu nome em caixa alta fica: ${nome.toUpperCase()} <br />`;
+      window.document.body.innerHTML += `o seu texto em caixa pequena fica: ${nome.toLowerCase()} <br />`;
+
+      window.document.body.innerHTML += `a sua nota do primeiro bimeste foi: ${nota1} <br />`;
+      window.document.body.innerHTML += `a sua nota do segundo bimestre foi: ${nota2} <br />`;
+      window.document.body.innerHTML += `a sua nota do terceiro bimestre foi: ${nota3} <br />`;
+      window.document.body.innerHTML += `a sua nota do quarto bimestre foi: ${nota4} <br />`;
+      window.document.body.innerHTML += `a sua media anual é: ${media} <br />`;
+
+      /*
+      indexOf
+      LastIndexOf
+      [4] ou entao charAt
+      length
+      split
+      match
+      search
+      replace
+      slice
+      */
+    </script>
+  </body>
+</html>
